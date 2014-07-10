@@ -86,7 +86,8 @@ BootStrap_CatchCurve<- function(LengthDat,CatchCurveWeight,WeightedRegression, R
       
       TempLengthDat<- TempLengthDat[is.na(TempLengthDat$Length)==F,]
       
-      SampleSize[y]<- dim(TempLengthDat)[1]
+      SampleSize[y]<- BootSampleSize*dim(TempLengthDat)[1]
+      
       
       if (i>1 & BootStrap==1) #Resample length data inside and outside of MPAs
       {
@@ -94,8 +95,8 @@ BootStrap_CatchCurve<- function(LengthDat,CatchCurveWeight,WeightedRegression, R
         FishedDat<- TempLengthDat[TempLengthDat$MPA==0,]
         
         NumPoints<- 1:dim(FishedDat)[1]	
-        
-        BootSample<- sample(NumPoints,BootSampleSize,replace=T)
+                
+        BootSample<- sample(NumPoints,length(NumPoints)*BootSampleSize,replace=T)
         
         TempFishedDat<- FishedDat[BootSample,]
         
@@ -103,13 +104,11 @@ BootStrap_CatchCurve<- function(LengthDat,CatchCurveWeight,WeightedRegression, R
         
         NumPoints<- 1:dim(MPADat)[1]	
         
-        BootSample<- sample(NumPoints,BootSampleSize,replace=T)
+        BootSample<- sample(NumPoints,length(NumPoints)*BootSampleSize,replace=T)
         
         TempMPADat<- MPADat[BootSample,]
         
         TempLengthDat<- rbind(TempFishedDat,TempMPADat)
-        
-        
         
       }
       
