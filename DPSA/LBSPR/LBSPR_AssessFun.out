@@ -1,0 +1,39 @@
+Done Data
+Done Parameters
+
+Initial statistics: 2 variables; iteration 0; function evaluation 0; phase 1
+Function value   8.5677273e+01; maximum gradient component mag   1.3419e+03
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.32036  1.34185e+03 |  2 -0.71290 -7.16042e+02 |
+
+Intermediate statistics: 2 variables; iteration 10; function evaluation 14; phase 1
+Function value   2.4270148e+01; maximum gradient component mag   1.1120e-02
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.21378  1.11205e-02 |  2 -0.86953  5.84135e-03 |
+
+ - final statistics:
+2 variables; iteration 12; function evaluation 16
+Function value   2.4270e+01; maximum gradient component mag  -8.7212e-09
+Exit code = 1;  converg criter   1.0000e-04
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.21378 -8.72117e-09 |  2 -0.86953  2.36133e-09 |
+
+Initial statistics: 3 variables; iteration 0; function evaluation 0; phase 2
+Function value   2.4270148e+01; maximum gradient component mag   2.8843e+01
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.21378 -8.74651e-09 |  2 -0.86953  2.37554e-09 |  3  0.91629  2.88433e+01
+
+Intermediate statistics: 3 variables; iteration 10; function evaluation 12; phase 2
+Function value   1.2817814e+01; maximum gradient component mag   3.8435e-01
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.19118  3.84351e-01 |  2 -0.92704 -9.47451e-02 |  3 -0.05140  2.19219e-04
+
+ - final statistics:
+3 variables; iteration 12; function evaluation 14
+Function value   1.2818e+01; maximum gradient component mag  -7.7128e-05
+Exit code = 1;  converg criter   1.0000e-04
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient   
+  1  0.19117 -7.71280e-05 |  2 -0.92705  3.08759e-05 |  3 -0.05142 -4.93740e-07
+Estimating row 1 out of 3 for hessian
+Estimating row 2 out of 3 for hessian
+Estimating row 3 out of 3 for hessian

@@ -1,0 +1,18 @@
+
+GeneralCode_StaticEstimateSPR.r
+	This r code simulates equilibrium length structure of catch given a set of biological parameters
+	and runs the SPR@Size assessment model. 
+	
+BiologicalPars.csv
+	This file contains the biological parameters required by the GeneralCode_StaticEstimateSPR.r 
+	code to simulate length frequency of catch.  Only set up for one species at this stage - the 
+	grass rockfish
+	
+AssumedParamters.csv
+	This file contains the parameters for the SPR@Size assessment model.  Currently set so that all
+	assumed values are set equal to the true values (i.e those in BiologicalPars.csv)
+	
+All_Functions
+	This folder contains all R scripts and functions that are required by 
+	GeneralCode_StaticEstimateSPR.r to run the SPR@Size assessment.  Most have been annotated, but 
+	some still require some housekeeping and cleaning up.
